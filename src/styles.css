@@ -3,3 +3,76 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header {
+    height: 48px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 3%;
+}
+
+.nav_menu {
+    height: 100%;
+    padding: 1% 5%;
+}
+
+.nav_desktop {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo_container img {
+    height: 100%;
+    width: 10rem;
+}
+
+.nav_menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+
+.nav_menu ul li {
+    list-style: none;
+    margin-right: 25%;
+}
+
+.nav_logo_container a, .nav_menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav_menu ul li a:hover {
+    text-decoration: underline;
+    color: #5271ff;
+}
+
+footer {
+    width: 100%;
+    padding: 1% 5%;
+    border-top: #000 solid 2px;
+    margin-top: 3%;
+}
+
+.footer_credits {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.footer_credits span {
+    font-size: 15px;
+}
