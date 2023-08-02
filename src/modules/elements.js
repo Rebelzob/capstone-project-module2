@@ -1,2 +1,13 @@
 const ids = [169, 82, 38963, 13, 4, 41007];
+export const navShows = document.getElementById('nav_shows');
+export const popupMain = document.querySelector('.popup_main');
+export const cardClosedBtn = document.getElementById('card_closedBtn');
+export const brand = document.querySelector('.nav_logo');
+export const commentsBtn = document.querySelector('.comments_btn');
+export const attSeasons = document.getElementById('att_seasons');
+export const attPremiere = document.getElementById('att_premiere');
+export const attGenres = document.getElementById('att_genres');
+export const attLanguage = document.getElementById('att_language');
+export const popupPoster = document.getElementById('popup_poster');
+export const showNname = document.querySelector('.show_name');
 export default ids;
