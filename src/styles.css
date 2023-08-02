@@ -82,6 +82,62 @@ main {
   padding: 2% 3%;
 }
 
+.card_comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1% 5%;
+}
+
+.card_top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* close poppup */
+.popup_main {
+  display: none;
+  height: 92vh;
+  width: 96vw;
+  background-color: #d3d3d3f5;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 2%;
+  border: #000 solid 1px;
+  border-radius: 9px;
+}
+
+.card_poster_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.card_top button {
+  font-size: 35px;
+  background-color: #fff0;
+  border: none;
+  cursor: pointer;
+}
+
+.show_attributes {
+  width: 80%;
+  margin-top: 3%;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1%;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
 footer {
   width: 100%;
   padding: 1% 5%;

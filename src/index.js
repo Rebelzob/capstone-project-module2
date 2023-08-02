@@ -1,11 +1,15 @@
 import './styles.css';
 import cards from './modules/cards.js';
 import logo from './images/logo.svg';
+import { brand, cardClosedBtn, popupMain } from './modules/elements.js';
 
-const brand = document.querySelector('.nav_logo');
 brand.src = logo;
 
 window.addEventListener('DOMContentLoaded', async () => {
-  const card = document.querySelector('.card_container');
-  card.innerHTML = await cards();
+  cards();
+});
+
+// close card
+cardClosedBtn.addEventListener('click', () => {
+  popupMain.style.display = 'none';
 });
