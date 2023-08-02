@@ -1,11 +1,9 @@
-import { getShows } from './getShows.js';
-import getSeasons from './getData.js';
+import { getShows, getSeassons } from './getShows.js';
 import {
   popupMain, showNname, attSeasons, attPremiere, attGenres, attLanguage, popupPoster,
 } from './elements.js';
 
-const showSeasons = getSeasons();
-
+const showSeasons = getSeassons();
 const cards = async () => {
   const shows = await getShows();
   shows.map((show) => {
@@ -34,11 +32,11 @@ const cards = async () => {
       showNname.innerText = show.name;
       attPremiere.innerText = `Premiered: ${show.premiered}`;
       const genresText = show.genres.map((singleItem) => ` ${singleItem}`);
-
-      // show.genres = show.genres.replace(',', ' ');
       attGenres.innerText = `Genres: ${genresText}`;
       attLanguage.innerText = `Language: ${show.language}`;
-      attSeasons.innerText = `Seasons: ${showSeasons[indexButton].length}`;
+      showSeasons.then((value) => {
+        attSeasons.innerText = `Seasons: ${value[indexButton].length}`;
+      });
     });
     return 0;
   });

@@ -136,7 +136,6 @@ main {
   column-gap: 1%;
   row-gap: 2rem;
   justify-content: center;
-  align-items: space-around;
 }
 
 footer {
