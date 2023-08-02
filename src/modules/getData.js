@@ -1,18 +1,11 @@
-import { getShows, getSeassons } from './getShows.js';
+import { getSeassons } from './getShows.js';
 
-let showDetails = [];
 let showSeasons = [];
-
-//getting all the details from all the tv shows
-let getDetails = getShows();
-getDetails.then( (value)=> {
-  showDetails = value;
-});
-
-//getting all the seasons from all the tv shows
-let getSeasons = getSeassons();
-getSeasons.then( (value)=> {
+// getting all the seasons from all the tv shows
+const getSeasons = getSeassons();
+getSeasons.then((value) => {
   showSeasons = value;
+  return showSeasons;
 });
 
-export { showDetails, showSeasons};
+export default getSeasons;
