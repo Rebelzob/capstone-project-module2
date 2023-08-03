@@ -5,6 +5,7 @@ import {
 import { getSeassons, getComments } from './apis.js';
 import updateComments from './updateContent.js';
 import commentCounter from './commentsCounter.js';
+import { clickLike } from './likes.js';
 
 const showSeasons = getSeassons();
 
@@ -26,7 +27,8 @@ const createCard = (show) => {
   showLikes.innerText = 'thumb_up';
   const showLikesNumber = document.createElement('span');
   showLikesNumber.className = 'likes_number';
-  showLikesNumber.innerText = show.rating.average;
+  showLikesNumber.innerText = '0'
+  clickLike(showLikes, showLikesNumber);
   const cardCommentBtn = document.createElement('button');
   cardCommentBtn.className = 'comments_btn';
   cardCommentBtn.innerText = 'Comments';
