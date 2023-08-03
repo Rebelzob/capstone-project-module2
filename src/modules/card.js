@@ -1,7 +1,10 @@
 import {
   popupMain, showNname, attSeasons, attPremiere, attGenres, attLanguage, popupPoster,
+  indexCard, ids, commentsList, popupNroComments,
 } from './elements.js';
-import { getSeassons } from './apis.js';
+import { getSeassons, getComments } from './apis.js';
+import updateComments from './updateContent.js';
+import commentCounter from './commentsCounter.js';
 
 const showSeasons = getSeassons();
 
@@ -36,6 +39,18 @@ const createCard = (show) => {
   cardContainer.appendChild(cardCommentBtn);
   cardCommentBtn.addEventListener('click', () => {
     const indexButton = (Array.from(cardContainer.parentNode.children).indexOf(cardContainer));
+    let commentsData = [];
+    const getCommentsList = getComments(`${ids[indexButton]}`);
+    getCommentsList.then((value) => {
+      commentsData = value;
+      while (commentsList.lastElementChild) {
+        commentsList.removeChild(commentsList.lastElementChild);
+      }
+      updateComments(commentsData);
+      const counter = commentCounter();
+      popupNroComments.innerText = `Comments (${counter})`;
+    });
+    indexCard.id = indexButton;
     popupMain.style.display = 'flex';
     popupPoster.src = show.image.medium;
     showNname.innerText = show.name;

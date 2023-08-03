@@ -1,7 +1,7 @@
-import ids from './elements.js';
+import { ids } from './elements.js';
 
 const api = 'https://api.tvmaze.com/shows/';
-const apiLikes = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/ZkLkIUUV1lTLjqilepgf'
+const apiLikes = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/ZkLkIUUV1lTLjqilepgf';
 
 const getShows = async () => {
   const data = await Promise.all(ids.map(async (id) => {
@@ -33,7 +33,24 @@ const postLikes = async (id) => {
     body: JSON.stringify({ item_id: id }),
   });
   return response.json();
-}
+};
 
+const getComments = async (itemId) => {
+  const response = await fetch(`${apiLikes}/comments?item_id=${itemId}`);
+  return response.json();
+};
 
-export { getShows, getSeassons, getLikes, postLikes };
+const postComments = async (id, name, comment) => {
+  const response = await fetch(`${apiLikes}/comments`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ item_id: id, username: name, comment }),
+  });
+  return response.text();
+};
+
+export {
+  getShows, getSeassons, getLikes, postLikes, postComments, getComments,
+};

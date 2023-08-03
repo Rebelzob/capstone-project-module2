@@ -1,4 +1,4 @@
-const ids = [169, 82, 38963, 13, 4, 41007];
+export const ids = [169, 82, 38963, 13, 4, 41007];
 export const navShows = document.getElementById('nav_shows');
 export const popupMain = document.querySelector('.popup_main');
 export const cardClosedBtn = document.getElementById('card_closedBtn');
@@ -10,4 +10,9 @@ export const attGenres = document.getElementById('att_genres');
 export const attLanguage = document.getElementById('att_language');
 export const popupPoster = document.getElementById('popup_poster');
 export const showNname = document.querySelector('.show_name');
-export default ids;
+export const indexCard = document.getElementById('index_card');
+export const submitBtnComment = document.querySelector('.submit_btnComment');
+export const nameField = document.getElementById('name_field');
+export const commentInput = document.getElementById('comment_input');
+export const commentsList = document.querySelector('.comments_list');
+export const popupNroComments = document.querySelector('.popup_nroComments');
