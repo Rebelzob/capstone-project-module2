@@ -9,7 +9,7 @@ import { postComments } from './modules/apis.js';
 brand.src = logo;
 
 window.addEventListener('DOMContentLoaded', async () => {
-  cards();
+  await cards();
 });
 
 // close card

@@ -104,6 +104,10 @@ main {
   margin-bottom: 7%;
 }
 
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
 /* close poppup */
 .popup_main {
   display: none;

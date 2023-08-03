@@ -32,7 +32,7 @@ const postLikes = async (id) => {
     },
     body: JSON.stringify({ item_id: id }),
   });
-  return response.json();
+  return response.text();
 };
 
 const getComments = async (itemId) => {
