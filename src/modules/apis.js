@@ -19,9 +19,9 @@ const getSeassons = async () => {
   return dataSeasons;
 };
 
-const getLikes = async (item_id) => {
-  const response = await fetch(`${apiLikes}/likes?item_id=${item_id}`);
-  return response.text();
+const getLikes = async () => {
+  const response = await fetch(`${apiLikes}/likes`);
+  return response.json();
 };
 
 const postLikes = async (id) => {

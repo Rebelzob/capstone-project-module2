@@ -5,15 +5,11 @@ import {
   brand, cardClosedBtn, popupMain, submitBtnComment, indexCard, ids, nameField, commentInput,
 } from './modules/elements.js';
 import { postComments } from './modules/apis.js';
-import { updateLikes } from './modules/likes.js';
 
 brand.src = logo;
 
 window.addEventListener('DOMContentLoaded', async () => {
-  try {
-    await cards();
-    await updateLikes();
-  } catch (error) { console.log(error); }
+  await cards();
 });
 
 // close card

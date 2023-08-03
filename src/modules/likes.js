@@ -10,15 +10,11 @@ const clickLike = (element,textElement) => {
   });
 }
 
-const updateLikes = async () => {
-  const cardElements = document.querySelectorAll('.card');
-  cardElements.forEach(async (cardElement) => {
-    const cardId = cardElement.id;
-    const likes = await getLikes(cardId);
-    const likesNumber = cardId.likes
-    const likesElement = cardElement.querySelector('.likes_number');
-    console.log(likes);
-  });
-};
+const displayLikes = (itemId, elementDisplay) => {
+  getLikes().then(((value) => {
+    const itemObject = value.find(item => item.item_id == itemId);
+    elementDisplay.innerText = itemObject.likes;
+  }));
+}
 
-export { clickLike, updateLikes };
+export { clickLike, displayLikes };
