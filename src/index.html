@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project Movies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <!-- Header Section -->
@@ -50,13 +51,35 @@
                 <button id="card_closedBtn">X</button>
                 
             </div>
-            <h2 class="show_name">Breaking Bad</h2>
+            <h2 class="show_name"></h2>
             <div class="show_attributes">
 
                 <span id="att_seasons"> Seasons:</span>
                 <span id="att_premiere"> Premiere:</span>
                 <span id="att_genres">Genres:</span>
                 <span id="att_language">Language:</span>
+            </div>
+            <div class="popup_commentsList">
+                <div class="popop_commentListTitle"><span class="popup_nroComments"></span></div>
+                <div class="comments_list"></div>
+            </div>
+            
+            <div class="popup_addComment">
+                <div class="popop_addCommentTitle">
+                    <h2 id="index_card">Add a comment</h2>
+                </div>
+                
+                <ul>
+                    <li>
+                        <input type="text" aria-label="user_name" name="user_name" maxlength="30" placeholder="Your name" id="name_field" required/>
+                    </li>
+                    <li>
+                        <input type="text" aria-label="user_comment" name="user_comment" placeholder="Your comment" id="comment_input" required/>
+                    </li>
+                    <li class="btn_comment">
+                        <button class="submit_btnComment" type="submit">Comment</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>    
