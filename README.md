@@ -15,6 +15,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features ](#key-features-)
+    - [Video Presentation](#video-presentation)
   - [💻 Getting Started ](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -43,6 +44,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
+ ## Video Presentation <a name="video-presentation"></a>
+
+- You can watch the [video](https://www.loom.com/share/970fdf88210f40ba9da8fe4705971c9a) walkthrough here.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
