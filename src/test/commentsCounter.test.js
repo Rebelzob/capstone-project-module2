@@ -9,31 +9,34 @@ document.body.innerHTML = `
 const container = document.querySelector('#container');
 
 describe('comments counter', () => {
-    test('Test if the count of comments is correct', () => {
-        for (let i=0;i<3;i+=1) {
-            const spanComment = document.createElement('span');
-            spanComment.className = 'comment_span';
-            container.appendChild(spanComment);
-        }
-        commentCounter();
-        expect(document.querySelectorAll('[class="comment_span"')).tobe(3);
-    });
-
-    test('Test if the count of comments is correct', () => {
-        for (let i=0;i<20;i+=1) {
-            const spanComment = document.createElement('span');
-            spanComment.className = 'comment_span';
-            container.appendChild(spanComment);
-        }
-        expect(document.querySelectorAll('[class="comment_span"')).toHaveLength(20);
-    });
-  
-    test('Test if the count of comments is correct', () => {
-        for (let i=0;i<200;i+=1) {
-            const spanComment = document.createElement('span');
-            spanComment.className = 'comment_span';
-            container.appendChild(spanComment);
-        }
-        expect(commentCounter()).tobe(200);
-    });
+  test('The count should be 0', () => {
+    expect(commentCounter()).toHaveLength(0);
   });
+
+  test('Test if the count is 3', () => {
+    for (let i = 0; i < 3; i += 1) {
+      const spanComment = document.createElement('span');
+      spanComment.className = 'comment_span';
+      container.appendChild(spanComment);
+    }
+    expect(commentCounter()).toHaveLength(3);
+  });
+
+  test('The count should be 23', () => {
+    for (let i = 0; i < 20; i += 1) {
+      const spanComment = document.createElement('span');
+      spanComment.className = 'comment_span';
+      container.appendChild(spanComment);
+    }
+    expect(commentCounter()).toHaveLength(23);
+  });
+
+  test('The count should be 223', () => {
+    for (let i = 0; i < 200; i += 1) {
+      const spanComment = document.createElement('span');
+      spanComment.className = 'comment_span';
+      container.appendChild(spanComment);
+    }
+    expect(commentCounter()).tobe(223);
+  });
+});
