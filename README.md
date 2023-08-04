@@ -71,7 +71,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ]  **Add more functionalities**
+-  Include a feature that allow us to make reservations for every tv show.
 
 ## 👥 Author <a name="authors"></a>
 
@@ -100,7 +100,7 @@ If you like this project like it and give me a follow.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse and [TvMaze](https://www.tvmaze.com/api) to let us use their API
+We would like to thank Microverse and [TvMaze](https://www.tvmaze.com/api) to let us use their API.
 
 
 ## 📝 License <a name="license"></a>
