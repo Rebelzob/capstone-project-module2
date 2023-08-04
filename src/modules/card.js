@@ -23,6 +23,7 @@ const createCard = (show) => {
   const likesDiv = document.createElement('div');
   likesDiv.className = 'likes';
   const showLikes = document.createElement('i');
+  showLikes.id = show.id;
   showLikes.className = 'material-symbols-outlined';
   showLikes.innerText = 'thumb_up';
   const showLikesNumber = document.createElement('span');
