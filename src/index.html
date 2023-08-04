@@ -46,14 +46,12 @@
         <div class="card_comments">
             <div class="card_top">
                 <div class="card_poster_container">
-                    <img id="popup_poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/0/2400.jpg" alt="show poster">
+                    <img id="popup_poster" src="#" alt="tv show poster">
                 </div>
                 <button id="card_closedBtn">X</button>
-                
             </div>
             <h2 class="show_name"></h2>
             <div class="show_attributes">
-
                 <span id="att_seasons"> Seasons:</span>
                 <span id="att_premiere"> Premiere:</span>
                 <span id="att_genres">Genres:</span>
@@ -64,11 +62,8 @@
                 <div class="comments_list"></div>
             </div>
             
-            <div class="popup_addComment">
-                <div class="popop_addCommentTitle">
-                    <h2 id="index_card">Add a comment</h2>
-                </div>
-                
+            <form class="popup_addComment">
+                <h2 id="index_card">Add a comment</h2>
                 <ul>
                     <li>
                         <input type="text" aria-label="user_name" name="user_name" maxlength="30" placeholder="Your name" id="name_field" required/>
@@ -76,11 +71,11 @@
                     <li>
                         <input type="text" aria-label="user_comment" name="user_comment" placeholder="Your comment" id="comment_input" required/>
                     </li>
-                    <li class="btn_comment">
+                    <li>
                         <button class="submit_btnComment" type="submit">Comment</button>
                     </li>
                 </ul>
-            </div>
+            </form>
         </div>
     </div>    
     <!-- Poppup -->
