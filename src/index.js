@@ -3,15 +3,19 @@ import cards from './modules/cards.js';
 import logo from './images/logo.svg';
 import {
   brand, cardClosedBtn, popupMain, submitBtnComment, indexCard, ids, nameField,
-  commentInput,
+  commentInput, showCounts,
 } from './modules/elements.js';
 import { postComments } from './modules/apis.js';
 import updateComments from './modules/updateContent.js';
+import cardCounter from './modules/cardCounter.js';
 
 brand.src = logo;
 
 window.addEventListener('DOMContentLoaded', async () => {
-  cards();
+  cards().then(() => {
+    const countShows = cardCounter();
+    showCounts.innerHTML = `(${countShows})`;
+  });
 });
 
 // close card

@@ -13,8 +13,8 @@ describe('cardCounter', () => {
         <div class="card"></div>
       </div>
     `;
-    cardCounter();
-    expect(document.querySelector('.card-container').innerHTML).toBe('3');
+
+    expect(cardCounter()).toBe(3);
   });
 
   test('should return 4 cards', () => {
@@ -27,7 +27,7 @@ describe('cardCounter', () => {
       </div>
     `;
     cardCounter();
-    expect(document.querySelector('.card-container').innerHTML).not.toBe('5');
+    expect(cardCounter()).not.toBe(5);
   });
 
   test('should return 0 cards', () => {
@@ -36,7 +36,7 @@ describe('cardCounter', () => {
       </div>
     `;
     cardCounter();
-    expect(document.querySelector('.card-container').innerHTML).toBe('0');
+    expect(cardCounter()).toBe(0);
   });
 
   test('should return 200 cards', () => {
@@ -48,6 +48,6 @@ describe('cardCounter', () => {
       `;
     });
     cardCounter();
-    expect(document.querySelector('.card-container').innerHTML).toBe('200');
+    expect(cardCounter()).toBe(200);
   });
 });
