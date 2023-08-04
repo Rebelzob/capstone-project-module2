@@ -39,6 +39,10 @@ header {
   width: 10rem;
 }
 
+.shows_container {
+  display: flex;
+}
+
 .nav_menu ul {
   display: flex;
   align-items: center;
@@ -113,7 +117,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   z-index: 10;
   position: relative;
   backdrop-filter: blur(10px);
@@ -132,7 +136,7 @@ main {
   align-items: flex-start;
   width: 100%;
   margin-bottom: 3%;
-  margin-top: 70%;
+  margin-top: 25%;
 }
 
 .material-symbols-outlined {

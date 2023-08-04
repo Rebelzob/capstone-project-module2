@@ -16,3 +16,4 @@ export const nameField = document.getElementById('name_field');
 export const commentInput = document.getElementById('comment_input');
 export const commentsList = document.querySelector('.comments_list');
 export const popupNroComments = document.querySelector('.popup_nroComments');
+export const showCounts = document.getElementById('show_counts');
