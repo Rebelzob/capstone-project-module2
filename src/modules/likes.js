@@ -2,7 +2,7 @@ import { getLikes, postLikes } from './apis.js';
 
 const clickLike = (element, textElement) => {
   element.addEventListener('click', () => {
-    postLikes(element.id).then(((value) => {
+    postLikes(parseInt(element.id), 10).then(((value) => {
       if (value === 'Created' || value === '201') {
         textElement.innerText = parseInt(textElement.innerText, 10) + 1;
       }
