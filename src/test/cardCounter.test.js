@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import cardCounter from "../modules/cardCounter";
+import cardCounter from '../modules/cardCounter.js';
 
 describe('cardCounter', () => {
   test('should update the card counter with the correct number of cards', () => {
@@ -30,7 +30,7 @@ describe('cardCounter', () => {
     expect(document.querySelector('.card-container').innerHTML).not.toBe('5');
   });
 
-  test ('should return 0 cards', () => {
+  test('should return 0 cards', () => {
     document.body.innerHTML = `
       <div class="card-container">
       </div>
@@ -39,14 +39,14 @@ describe('cardCounter', () => {
     expect(document.querySelector('.card-container').innerHTML).toBe('0');
   });
 
-  test ('should return 200 cards', () => {
-    for (let i = 0; i < 200; i++) {
+  test('should return 200 cards', () => {
+    Array(200).fill().forEach(() => {
       document.body.innerHTML += `
         <div class="card-container">
           <div class="card"></div>
         </div>
       `;
-    }
+    });
     cardCounter();
     expect(document.querySelector('.card-container').innerHTML).toBe('200');
   });
