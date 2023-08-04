@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/Rebelzob/capstone-project-module2#readme",
   "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.6.2",
     "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -39,5 +42,8 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^29.6.2"
   }
 }
