@@ -10,7 +10,7 @@ const container = document.querySelector('#container');
 
 describe('comments counter', () => {
   test('The count should be 0', () => {
-    expect(commentCounter()).toHaveLength(0);
+    expect(commentCounter()).toBe(0);
   });
 
   test('Test if the count is 3', () => {
@@ -19,7 +19,7 @@ describe('comments counter', () => {
       spanComment.className = 'comment_span';
       container.appendChild(spanComment);
     }
-    expect(commentCounter()).toHaveLength(3);
+    expect(commentCounter()).toBe(3);
   });
 
   test('The count should be 23', () => {
@@ -28,7 +28,7 @@ describe('comments counter', () => {
       spanComment.className = 'comment_span';
       container.appendChild(spanComment);
     }
-    expect(commentCounter()).toHaveLength(23);
+    expect(commentCounter()).toBe(23);
   });
 
   test('The count should be 223', () => {
@@ -37,6 +37,6 @@ describe('comments counter', () => {
       spanComment.className = 'comment_span';
       container.appendChild(spanComment);
     }
-    expect(commentCounter()).toHaveLength(223);
+    expect(commentCounter()).toBe(223);
   });
 });
