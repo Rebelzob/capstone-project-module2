@@ -71,7 +71,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ]  **Add more functionalities**
+-  Include a feature that allow us to make reservations for every tv show.
 
 ## 👥 Author <a name="authors"></a>
 
@@ -80,14 +80,18 @@ To run the project, execute the following command:
 - GitHub: [@Rebelzob](https://github.com/Rebelzob)
 - LinkedIn: [Karim-Barragan](https://www.linkedin.com/in/karim-barragan/)
 
+👤 **Iván Gonzalez**
+
+- GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
+- LinkedIn: [Ivan-Gonzalez](https://www.linkedin.com/in/iv%C3%A1n-gonzalez-robles-957491275/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributions
 
-I would like to thank the following for their contributions to the success of this project
+Contributions, issues, and feature requests are welcome!
 
-Javier Martinez
-Karim Barragan
+Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
  
@@ -96,8 +100,7 @@ If you like this project like it and give me a follow.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-It was a collaborative project with Javier Martinez
-
+We would like to thank Microverse and [TvMaze](https://www.tvmaze.com/api) to let us use their API.
 
 
 ## 📝 License <a name="license"></a>
