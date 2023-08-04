@@ -37,6 +37,6 @@ describe('comments counter', () => {
       spanComment.className = 'comment_span';
       container.appendChild(spanComment);
     }
-    expect(commentCounter()).tobe(223);
+    expect(commentCounter()).toHaveLength(223);
   });
 });
