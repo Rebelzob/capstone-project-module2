@@ -250,8 +250,8 @@ input {
 
 .submit_btnComment {
   border-radius: 5px;
-  color: #5271ff;
-  background-color: #fff;
+  color: #fff;
+  background-color: #29397f;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
