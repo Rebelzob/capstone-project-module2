@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project Movies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header_bar">
+        <nav class="nav_menu">
+            <div class="nav_desktop">
+                <div class="nav_logo_container">
+                    <a href="#">
+                        <img class="nav_logo" alt="brand icon">
+                    </a>
+                </div>
+                <ul class="nav_items">
+                    <li class="shows_container">
+                        <a id="nav_shows" href="#" title="genders">Shows</a>
+                        <span id="show_counts"></span>
+                    </li>
+                    <li>
+                        <a id="nav_genders" href="#" title="genders">Genders</a>
+                    </li>
+                    <li>
+                        <a id="nav_actors" href="#" title="actors3">Actors</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>      
+    </header>
+    <!-- Header Section -->
+    <!-- Main Section -->
+    <main>
+        <section>
+            <article class="card_container">
+            </article>
+        </section>
+    </main>
+    <!-- Main Section -->
+
+    <!-- Poppup -->
+    <div class="popup_main">
+        <div class="card_comments">
+            <div class="card_top">
+                <div class="card_poster_container">
+                    <img id="popup_poster" src="#" alt="tv show poster">
+                </div>
+                <button id="card_closedBtn">X</button>
+            </div>
+            <h2 class="show_name"></h2>
+            <div class="show_attributes">
+                <span id="att_seasons"> Seasons:</span>
+                <span id="att_premiere"> Premiere:</span>
+                <span id="att_genres">Genres:</span>
+                <span id="att_language">Language:</span>
+            </div>
+            <div class="popup_commentsList">
+                <div class="popop_commentListTitle"><span class="popup_nroComments"></span></div>
+                <div class="comments_list"></div>
+            </div>
+            
+            <div class="popup_addComment">
+                <h2 id="index_card">Add a comment</h2>
+                <ul>
+                    <li>
+                        <input type="text" aria-label="user_name" name="user_name" maxlength="30" placeholder="Your name" id="name_field" required/>
+                    </li>
+                    <li>
+                        <input type="text" aria-label="user_comment" name="user_comment" placeholder="Your comment" id="comment_input" required/>
+                    </li>
+                    <li>
+                        <button class="submit_btnComment" type="submit">Comment</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <!-- Poppup -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+         <div class="footer_credits">
+            <span>Created by Iván and Karim under CC license</span>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+    
+</body>
+</html>
